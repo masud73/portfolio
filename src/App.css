@@ -1,0 +1,27 @@
+html {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    letter-spacing: .01rem;
+}
+
+h1,
+h2 {
+    padding: 0;
+    margin: 0;
+    color: var(--color-black);
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: rgb(241, 243, 244);
+}
