@@ -191,7 +191,7 @@ form {
 }
 
 .form-header h2 {
-    color: rgb(97, 171, 245);
+    color: dodgerblue;
     padding: 0;
 }
 
@@ -249,6 +249,8 @@ textarea {
 
 
 @media screen and (max-width: 780px) {
+    .header { padding: 1rem; padding-top: 2rem; }
+    
     .header-content {
         flex-direction: column;
         align-items: center;
@@ -282,10 +284,10 @@ textarea {
      }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 548px) {
     .text h1 { font-size: 2em; }
 
-    .header { padding: 1rem; padding-top: 2rem; }
+    /* .header { padding: 1rem; padding-top: 2rem; } */
 
     .navbar {display: flex;}
 
