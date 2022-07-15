@@ -1,6 +1,18 @@
+@import url('./styles/flex.css');
+@import url('./styles/card.css');
+@import url('./styles/projects.css');
+
+
+:root {
+    --color-dark: #1c3042;
+    --color-black: #003;
+    --color-7080: #708090;
+}
+
 html {
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -9,10 +21,18 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0;
     color: var(--color-black);
+    line-height: 1.5;
+}
+
+ul li {
     line-height: 1.5;
 }
 
@@ -23,5 +43,294 @@ body {
     -webkit-user-select: none;
     overflow: hidden;
     overflow-y: auto;
-    background-color: rgb(241, 243, 244);
+    background-color: var(--color-dark);
+}
+
+button { cursor: pointer; }
+
+.disabled {
+    opacity: .4 !important;
+    cursor: not-allowed !important;
+}
+
+.disabled:hover {
+    background-color: dodgerblue !important;
+}
+
+.header {
+    padding: 2rem;
+    padding-top: 4rem;
+    background-color: var(--color-dark);
+}
+
+.header-content { width: 100%; }
+
+.header-content .right-content {
+    margin-left: 1rem;
+    padding: 0 1rem;
+}
+
+.header-content .left-content { padding: 0 1rem; }
+
+.big-img-container {
+    position: relative;
+    height: 315px;
+    width: 315px;
+    border-radius: 50%;
+    background: rgb(215,165,147);
+    background: linear-gradient(to bottom right, rgba(215,165,147,1) 2%,
+        rgba(121,9,90,1) 39%, rgba(5,177,155,1) 64%, rgba(63,114,198,1) 73%,
+        rgba(77,63,4,1) 80%, rgba(0,212,255,1) 100%);
+}
+
+#big-img {
+    pointer-events: none;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 97%;
+    min-width: 97%;
+}
+
+.text h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    font-size: 1.3em;
+    color: var(--color-7080);
+    line-height: 1.5;
+}
+
+#btn-hire {
+    width: 10rem;
+    padding: .65rem;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-top: .2rem;
+    border-radius: 7px;
+    border: none;
+    color: var(--color-black);
+    background-color: #f9f9f9;
+    background: rgb(34,193,195);
+    background: linear-gradient(to bottom right, rgba(34,193,195,1) 0%,
+    rgba(253,187,45,1) 100%);
+}
+
+.social-wrapper { margin-top: 4rem; }
+
+.social-wrapper header span.title {
+    font-size: 1.3em;
+    color: var(--color-7080);
+}
+
+.social-icons-container {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-icons-container div {
+    border-radius: 40px;
+    margin-right: 2.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.social-icons-container div a {
+    text-decoration: none;
+    padding: .4rem;
+}
+
+.social-icons-container div a svg { font-size: 1.6rem; }
+
+#github { color: rgb(180, 180, 180); }
+
+#twitter { color: dodgerblue; }
+
+#meta { color: blue; }
+
+#instagram { color: rgb(199, 31, 73); }
+
+#email { color: rgb(156, 34, 34); }
+
+#phone { color: rgb(163, 189, 16); }
+
+
+/* MAIN CONTENT */
+main { padding: 1rem 1rem; }
+
+section {
+    width: 100%;
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+    background-color: #f5f5f5;
+    margin: 2rem 0;
+    border-radius: 7px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+section div header { padding-bottom: 1rem; }
+
+h2 {
+    background-color: transparent;
+    text-align: center;
+    padding: 0 .5rem;
+    font-size: 1.6em;
+}
+
+form {
+    width: 50%;
+}
+
+.form-header {
+    width: 100% !important;
+    margin-bottom: 1rem;
+}
+
+.form-header h2 {
+    color: rgb(97, 171, 245);
+    padding: 0;
+}
+
+
+textarea {
+    width: 100%;
+    height: 190px !important;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btn-send {
+    margin-top: .2rem;
+    width: 9rem;
+    background-color: dodgerblue;
+    color: #f9f9f9;
+    font-size: 1em;
+    padding: .7rem;
+    border: none;
+    outline-color: dodgerblue;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.footer {
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+    color: #cecece;
+    background-color: #003;
+}
+
+.footer a#btn-hire {
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer small {
+    text-align: center;
+    line-height: 1.7;
+    margin: 1rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: .8em;
+    color: var(--color-7080);
+}
+
+@media screen and (min-width: 1110px) {
+    section {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content .left-content {
+        margin-bottom: 1rem;
+        align-self: flex-start;
+    }
+
+    .header-content .right-content { margin: 0; }
+
+    section {
+        flex-wrap: wrap;
+        padding: .5rem;
+        padding-top: 1rem;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .card-wrapper {
+        margin: .5rem;
+    }
+
+    form { 
+        width: 80%;
+     }
+     
+     .form-header {
+         width: 80%;
+     }
+}
+
+@media screen and (max-width: 480px) {
+    .text h1 { font-size: 2em; }
+
+    .header { padding: 1rem; padding-top: 2rem; }
+
+    .navbar {display: flex;}
+
+    .header-content .left-content { align-self: center; }
+
+    .social-icons-container { justify-content: space-between; }
+
+    .social-icons-container div { margin-right: .6rem; }
+
+    .big-img-container {
+        height: 220px;
+        width: 220px;
+    }
+
+    .text h1,
+    .text p { text-align: justify; }
+
+
+    .card-wrapper {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: 350px;
+        box-shadow: none;
+    }
+
+    .projects-container {
+        flex-wrap: wrap !important;
+        padding: .5rem;
+    }
+
+    .projects-container .card {
+        min-width: unset;
+        margin: .8rem 0;
+        height: 385px;
+    }
+
+    #project-snap {
+        height: 270px;
+    }
+
+    form {
+        width: 100%;
+        padding: 1rem;
+    }
 }

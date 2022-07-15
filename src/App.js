@@ -1,7 +1,16 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 
-import Img from './static/images/img-01.jpg';
 
+import { MyProjects } from './components/projects';
+import { MyStack } from './components/Stack';
+import { Pricing } from './components/Pricing';
+import { AboutMe } from './components/About';
+import { MessageForm } from './components/form';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 
@@ -10,10 +19,27 @@ function App()
 {
     return (
         <React.Fragment>
-            <h1>Hello, portfo</h1>
-            <Suspense fallback='Loading image...'>
-                <img style={{borderRadius: '50%', objectFit: 'cover'}} height='300' width='300' src={Img} alt='Masud' />
-            </Suspense>
+            <header className='header'>
+                <Header />
+            </header>
+            <main>
+                <section className='flex-start'>
+                    <AboutMe />
+                    <MyStack />
+                    <Pricing />
+                </section>
+
+                <section className='flex-column-center'>
+                    <MyProjects />
+                </section>
+
+                <section className='form-container flex-column-center'>
+                    <MessageForm />
+                </section>
+            </main>
+            <footer className="footer flex-column-center">
+                <Footer />
+            </footer>
         </React.Fragment>
     );
 }

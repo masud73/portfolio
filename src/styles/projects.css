@@ -1,0 +1,46 @@
+.projects-container {
+    flex-wrap: nowrap !important;
+    width: 100%;
+    overflow: hidden !important;
+    overflow-x: auto !important;
+    padding-top: .5rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.projects-container::-webkit-scrollbar,
+section::-webkit-scrollbar {
+    background-color: rgb(197, 193, 193);
+    height: 10px;
+    border-radius: 20px;
+}
+
+.projects-container::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb {
+    width: auto;
+    background-color: var(--color-7080);
+    border-radius: 20px;
+}
+
+.projects-container .card {
+    margin: 0 1rem;
+    min-width: 330px;
+}
+
+.project-body {
+    text-align: center;
+    padding: 0;
+    background-color: #fff;
+}
+
+.project-link {
+    text-decoration: none;
+    width: 100%;
+}
+
+#project-snap {
+    height: 325px;
+    width: inherit;
+    object-fit: cover;
+    object-position: top;
+}
