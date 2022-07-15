@@ -16,11 +16,11 @@ export default function Social()
                 <div className='flex-center' title='Twitter - @____masud'>
                     <a href='https://www.twitter.com/____masud' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Twitter id='twitter'/></a>
                 </div>
-                <div className='flex-center' title='Meta - Mohammed Abubakar'>
-                    <a href='#' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Meta id='meta'/></a>
+                <div className='flex-center' title='Meta - masud.abubakar.56829'>
+                    <a href='https://web.facebook.com/masud.abubakar.56829' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Meta id='meta'/></a>
                 </div>
-                <div className='flex-center' title='Instagram - ___masud'>
-                    <a href='#' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Instagram id='instagram'/></a>
+                <div className='flex-center' title='Instagram - mas_____ud'>
+                    <a href='https://www.instagram.com/mas_____ud/' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Instagram id='instagram'/></a>
                 </div>
                 <div className='flex-center' title='Email at: mohdabbakarr@gmail.com'>
                     <a href='mailto:mohdabbakarr@gmail.com' rel='noopener noreferrer' className='flex-start-center'><Envelope id='email'/></a>

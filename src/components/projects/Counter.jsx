@@ -10,7 +10,7 @@ export default function CounterApp()
     return (
         <>
             <Card>
-                <Card.Link href='https://www.masud73.github.io/counter' className='project-link' rel='noopener noreferrer' target='_blank'>
+                <Card.Link href='https://masud73.github.io/counter' className='project-link' rel='noopener noreferrer' target='_blank'>
                     <Card.Img id='project-snap' variant='top' src={CounterSnapshort} alt='Counter Snapshort' />
                 </Card.Link>
                 <Card.Body className='project-body'>
