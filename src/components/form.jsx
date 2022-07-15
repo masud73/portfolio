@@ -6,7 +6,6 @@ import { Form } from "react-bootstrap";
 
 
 
-
 export function MessageForm()
 {
     const [name, setName] = useState('');
@@ -35,8 +34,8 @@ export function MessageForm()
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         const form = e.currentTarget;
+
         if (form.checkValidity() === false) {
             e.stopPropagation();
         }

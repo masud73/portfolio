@@ -23,10 +23,10 @@ export default function Social()
                     <a href='#' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Instagram id='instagram'/></a>
                 </div>
                 <div className='flex-center' title='Email at: mohdabbakarr@gmail.com'>
-                    <a href='mailto:mohdabbakarr@gmail.com' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Envelope id='email'/></a>
+                    <a href='mailto:mohdabbakarr@gmail.com' rel='noopener noreferrer' className='flex-start-center'><Envelope id='email'/></a>
                 </div>
                 <div className='flex-center' title='Call +234 706 565 6558'>
-                    <a href='tel:+2347065656558' rel='noopener noreferrer' className='flex-start-center' target='_blank'><Telephone id='phone'/></a>
+                    <a href='tel:+2347065656558' rel='noopener noreferrer' className='flex-start-center'><Telephone id='phone'/></a>
                 </div>
             </div>
        </>
