@@ -60,7 +60,7 @@ export function MessageForm()
         setValidated(true);
         
         if (form.checkValidity() === true) {
-            if (hasSent == 0) {
+            if (hasSent === 0) {
                 emailjs.sendForm(service_id, template_id, _form.current, public_key)
                 .then(() => {
                     setShow(true);
@@ -105,7 +105,7 @@ export function MessageForm()
                     </p>
                 }
                 <hr />
-                <p className="mb-0">For more info, please send an email to <Alert.Link href="mailto:mohdabbakar@gmail.com">mohdabbakar@gmail.com</Alert.Link></p>
+                <p className="mb-0">For more info, please send an email to <Alert.Link href="mailto:mohdabbakarr@gmail.com">mohdabbakarr@gmail.com</Alert.Link></p>
             </Alert>
             <Form.Group className='mb-3'>
                 <FloatingLabel label="What's your name?">
