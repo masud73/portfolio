@@ -10,8 +10,6 @@ import { Alert } from "react-bootstrap";
 
 export function MessageForm()
 {
-    const has_sent = localStorage.getItem('hasSent');
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -19,8 +17,7 @@ export function MessageForm()
     const [validated, setValidated] = useState(false);
     const [show, setShow] = useState(false);
     const [showError, setShowError] = useState(false);
-    const [hasSent, setHasSent] = useState(has_sent);
-    const [errCode, setErrCode] = useState('');
+    const [err, setErr] = useState();
 
     const [tmpEmail, setTmpEmail] = useState('');
 
@@ -60,23 +57,16 @@ export function MessageForm()
         setValidated(true);
         
         if (form.checkValidity() === true) {
-            if (hasSent === 0) {
-                emailjs.sendForm(service_id, template_id, _form.current, public_key)
-                .then(() => {
-                    setShow(true);
-                    localStorage.setItem('hasSent', 1);
-                    setHasSent(1);
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                }, (err) => {
-                    console.log(err.text);
-                    setErrCode(err.code)
-                    setShowError(true);
-                });
-            } else {
+            emailjs.sendForm(service_id, template_id, _form.current, public_key)
+            .then(() => {
+                setShow(true);
+                setName('');
+                setEmail('');
+                setMessage('');
+            }, (err) => {
+                setErr(err.status);
                 setShowError(true);
-            }
+            });
         }
     };
 
@@ -94,16 +84,9 @@ export function MessageForm()
             </Alert>
             <Alert transition dismissible variant="danger" show={showError} onClose={() => setShowError(false)}>
                 <Alert.Heading>Message not sent</Alert.Heading>
-                {
-                    errCode ?
-                    <p>
-                        Could not send message at this time. Please try again. Error code: {errCode}
-                    </p>
-                    :
-                    <p>
-                        You appear to send multiple message. You can only send 1 message at a time.
-                    </p>
-                }
+                <p>
+                    Could not send message at this time. Please try again. Error code: {err}
+                </p>
                 <hr />
                 <p className="mb-0">For more info, please send an email to <Alert.Link href="mailto:mohdabbakarr@gmail.com">mohdabbakarr@gmail.com</Alert.Link></p>
             </Alert>
