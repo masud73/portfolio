@@ -101,7 +101,7 @@ button { cursor: pointer; }
 .text p {
     font-size: 1.3em;
     color: var(--color-7080);
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 #btn-hire {

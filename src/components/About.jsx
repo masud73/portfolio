@@ -15,7 +15,7 @@ export function AboutMe()
                         Hi there, My name is Masud. I hail from Nigeria. I'm a self-taught developer
                         and I'm so passionate about computer programming and creating stuffs for the web.
                         Though I'm still learning but creating cool things
-                        along the way. 
+                        along the way.
                         <br />
                         <br />
                         Some of my projects can be found below. Please check them out.
