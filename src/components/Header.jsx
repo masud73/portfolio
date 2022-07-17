@@ -1,18 +1,13 @@
 import React from "react";
 
 import { Button } from 'react-bootstrap';
-
 import Social from './social';
 import Img from '../static/images/img-01.jpg';
 
 
 export default function Header()
 {
-    return (
-        <div className='header-content flex-start'>
-            <HeaderContent />
-        </div>
-    );
+    return (<div className='header-content flex-start'><HeaderContent /></div>);
 }
 
 function HeaderContent()
@@ -37,9 +32,7 @@ function RightContent()
                     <p>Need a website for yourself or your business? Worry no more!</p>
                 </div>
                 <Button id='btn-hire' as='a' href='#send-msg'>Hire me</Button>
-                <div className='social-wrapper flex-column'>
-                    <Social />
-                </div>
+                <div className='social-wrapper flex-column'><Social /></div>
             </div>
         </>
     );

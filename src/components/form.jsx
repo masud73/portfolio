@@ -51,9 +51,8 @@ export function MessageForm()
         e.preventDefault();
         const form = e.currentTarget;
 
-        if (form.checkValidity() === false) {
-            e.stopPropagation();
-        }
+        if (form.checkValidity() === false) e.stopPropagation();
+
         setValidated(true);
         
         if (form.checkValidity() === true) {
@@ -84,9 +83,7 @@ export function MessageForm()
             </Alert>
             <Alert transition dismissible variant="danger" show={showError} onClose={() => setShowError(false)}>
                 <Alert.Heading>Message not sent</Alert.Heading>
-                <p>
-                    Could not send message at this time. Please try again. Error code: {err}
-                </p>
+                <p>Could not send message at this time. Please try again. Error code: {err}</p>
                 <hr />
                 <p className="mb-0">For more info, please send an email to <Alert.Link href="mailto:mohdabbakarr@gmail.com">mohdabbakarr@gmail.com</Alert.Link></p>
             </Alert>

@@ -6,9 +6,7 @@ export function AboutMe()
 {
     return (
         <div className='card-wrapper flex-column-center'>
-            <header>
-                <h2>About Me</h2>
-            </header>
+            <header><h2>About Me</h2></header>
             <Card>
                 <Card.Body>
                     <Card.Text as='p'>
@@ -16,8 +14,7 @@ export function AboutMe()
                         and I'm so passionate about computer programming and creating stuffs for the web.
                         Though I'm still learning but creating cool things
                         along the way.
-                        <br />
-                        <br />
+                        <br /><br />
                         Some of my projects can be found below. Please check them out.
                     </Card.Text>
                 </Card.Body>
