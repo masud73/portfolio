@@ -8,7 +8,7 @@ export function MyStack()
     return (
         <div className='card-wrapper flex-column-center'>
             <header>
-                <h2 id='myStack'>My Stack</h2>
+                <h2 id='myStack'>Tools And Languages</h2>
             </header>
             <Card>
                 <Card.Body>
@@ -16,11 +16,16 @@ export function MyStack()
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
-                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>React JS</li>
                         <li>Bootstrap</li>
+                        <li>Java</li>
                         <li>C</li>
                         <li>Python</li>
                         <li>Flask</li>
+                        <li>Socket.io</li>
+                        <li>Git</li>
+                        <li>VS Code</li>
                     </Card.Text>
                 </Card.Body>
             </Card>

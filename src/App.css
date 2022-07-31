@@ -18,6 +18,7 @@ html {
 * {
     box-sizing: border-box;
     letter-spacing: .01rem;
+    box-shadow: none !important;
 }
 
 h1,
@@ -135,12 +136,12 @@ button { cursor: pointer; }
     border-radius: 40px;
     margin-right: 2.3rem;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 .social-icons-container div a {
     text-decoration: none;
-    padding: .4rem;
+    padding: .8rem;
 }
 
 .social-icons-container div a svg { font-size: 1.6rem; }
@@ -149,11 +150,7 @@ button { cursor: pointer; }
 
 #twitter { color: dodgerblue; }
 
-#meta { color: blue; }
-
-#instagram { color: rgb(199, 31, 73); }
-
-#email { color: rgb(156, 34, 34); }
+#email { color: rgb(221, 84, 84); }
 
 #phone { color: rgb(163, 189, 16); }
 

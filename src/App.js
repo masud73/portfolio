@@ -26,7 +26,7 @@ function App()
                 <section className='flex-start'>
                     <AboutMe />
                     <MyStack />
-                    <Pricing />
+                    {/* <Pricing /> */}
                 </section>
 
                 <section className='flex-column-center'>

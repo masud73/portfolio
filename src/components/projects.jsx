@@ -10,7 +10,7 @@ export function MyProjects()
     return (
         <>
             <header>
-                <h2>My Projects</h2>
+                <h2>My Works</h2>
             </header>
             <CardGroup as='div' className='projects-container flex-start'>
                 <CounterApp />

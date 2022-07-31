@@ -29,7 +29,7 @@ function RightContent()
             <div className='right-content'>
                 <div className='text'>
                     <h1>Hi, I am <span style={{color: 'orange'}}>Masud</span>, A Web Developer Based In Nigeria</h1>
-                    <p>Need a website for yourself or your business? Worry no more!</p>
+                    <p>Can give you static web pages and dynamic web apps.</p>
                 </div>
                 <Button id='btn-hire' as='a' href='#send-msg'>Hire me</Button>
                 <div className='social-wrapper flex-column'><Social /></div>
