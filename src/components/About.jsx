@@ -13,7 +13,7 @@ export function AboutMe()
                         Hi there, My name is Masud. I hail from Northern part of Nigeria. I'm a full-stack web developer
                         and I love creating stuffs for the web and command-line. <br /> <br />
                         
-                        I can render the following services: <br />
+                        I can deliver the following services: <br />
                     </Card.Text>
                     <ul>
                         <li>Static web pages</li>

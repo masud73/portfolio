@@ -18,11 +18,9 @@ export function MyStack()
                         <li>Node.js</li>
                         <li>React JS</li>
                         <li>Bootstrap</li>
-                        <li>Java</li>
                         <li>C</li>
                         <li>Python</li>
                         <li>Flask</li>
-                        <li>Socket.io</li>
                         <li>Git</li>
                         <li>VS Code</li>
                     </Card.Text>
