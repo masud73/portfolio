@@ -1,5 +1,5 @@
 import React from "react";
-import { Envelope, Github, Instagram, Meta, Telephone, Twitter } from 'react-bootstrap-icons';
+import { Envelope, Github, Telephone, Twitter } from 'react-bootstrap-icons';
 
 
 export default function Social()

@@ -3,7 +3,6 @@ import React from 'react';
 
 import { MyProjects } from './components/projects';
 import { MyStack } from './components/Stack';
-import { Pricing } from './components/Pricing';
 import { AboutMe } from './components/About';
 import { MessageForm } from './components/form';
 
@@ -26,7 +25,6 @@ function App()
                 <section className='flex-start'>
                     <AboutMe />
                     <MyStack />
-                    {/* <Pricing /> */}
                 </section>
 
                 <section className='flex-column-center'>
