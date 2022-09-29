@@ -27,9 +27,9 @@ function App()
                     <MyStack />
                 </section>
 
-                <section className='flex-column-center'>
+                {/* <section className='flex-column-center'>
                     <MyProjects />
-                </section>
+                </section> */}
 
                 <section className='form-container flex-column-center'>
                     <MessageForm />
