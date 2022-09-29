@@ -42,10 +42,15 @@ export function MessageForm()
         }
     }
 
+    // const _form = useRef();
+    // const service_id = process.env.REACT_APP_SERVICE_ID;
+    // const template_id = process.env.REACT_APP_TEMPLATE_ID;
+    // const public_key = process.env.REACT_APP_PUBLIC_KEY;
+
     const _form = useRef();
-    const service_id = process.env.REACT_APP_SERVICE_ID;
-    const template_id = process.env.REACT_APP_TEMPLATE_ID;
-    const public_key = process.env.REACT_APP_PUBLIC_KEY;
+    const service_id = 'service_pngrbmn'
+    const template_id = 'template_eqtmilf'
+    const public_key = 'cfJHIC53UpCP6Vmaf'
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -65,6 +70,7 @@ export function MessageForm()
             }, (err) => {
                 setErr(err.status);
                 setShowError(true);
+                console.log(err);
             });
         }
     };
@@ -77,15 +83,15 @@ export function MessageForm()
             <Alert transition dismissible variant="success" show={show} onClose={() => setShow(false)}>
                 <Alert.Heading>Message sent</Alert.Heading>
                 <p>Thanks for reaching me out! <br />
-                    Your message was sent successfully! You'll be notified via
-                    email "{tmpEmail}" as soon as possible.
+                    Your message was sent successfully! You will be contacted via
+                     "{tmpEmail}" as soon as possible.
                 </p>
             </Alert>
             <Alert transition dismissible variant="danger" show={showError} onClose={() => setShowError(false)}>
                 <Alert.Heading>Message not sent</Alert.Heading>
                 <p>Could not send message at this time. Please try again. Error code: {err}</p>
                 <hr />
-                <p className="mb-0">For more info, please send an email to <Alert.Link href="mailto:mohdabbakarr@gmail.com">mohdabbakarr@gmail.com</Alert.Link></p>
+                <p className="mb-0">For more info, please send an email to <Alert.Link href="mailto:masud727333@gmail.com">masud727333@gmail.com</Alert.Link></p>
             </Alert>
             <Form.Group className='mb-3'>
                 <FloatingLabel label="What's your name?">

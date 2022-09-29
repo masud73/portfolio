@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { MyProjects } from './components/projects';
+// import { MyProjects } from './components/projects';
 import { MyStack } from './components/Stack';
 import { AboutMe } from './components/About';
 import { MessageForm } from './components/form';
