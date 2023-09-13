@@ -10,7 +10,7 @@ export function AboutMe()
             <Card>
                 <Card.Body>
                     <Card.Text as='p'>
-                        Hi there, My name is Masud. I hail from Northern part of Nigeria. I'm a full-stack web developer
+                        Hi there, My name is Masud. I hail from Nigeria. I'm a full-stack web developer
                         and I love creating stuffs for the web and command-line. <br /> <br />
                         
                         I can deliver the following services: <br />
