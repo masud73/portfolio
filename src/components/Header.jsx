@@ -31,7 +31,7 @@ function RightContent()
                     <h1>Hi, I am <span style={{color: 'orange'}}>Masud</span>, A Web Developer Based In Nigeria</h1>
                     <p>Can give you static web pages and dynamic web apps.</p>
                 </div>
-                <Button id='btn-hire' as='a' href='#send-msg'>Hire me</Button>
+                <Button id='btn-hire' as='a' href='#send-msg'>HIRE ME</Button>
                 <div className='social-wrapper flex-column'><Social /></div>
             </div>
         </>
