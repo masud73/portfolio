@@ -10,7 +10,7 @@ export function MyProjects()
                 <h2>My Works</h2>
             </header>
             <CardGroup as='div' className='projects-container flex-start'>
-                
+                Lorem ipsum
             </CardGroup>
         </>
     );
