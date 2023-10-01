@@ -6,7 +6,7 @@ export function AboutMe()
 {
     return (
         <div className='card-wrapper flex-column-center'>
-            <header><h2>About Me</h2></header>
+            <header><h2>ABOUT ME</h2></header>
             <Card>
                 <Card.Body>
                     <Card.Text as='p'>
