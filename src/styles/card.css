@@ -4,9 +4,9 @@
 
 .card {
     position: relative;
-    height: 380px;
+    height: auto;
     width: 330px;
-    border-radius: 12px;
+    border-radius: 30px;
     background-color: #fff;
     overflow: hidden;
     overflow-y: auto;
